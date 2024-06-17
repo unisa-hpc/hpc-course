@@ -1,1 +1,1 @@
-# High Performance Computing Course at the University of Salerno, Italy 
+# High Performance Computing course at the University of Salerno, Italy 
