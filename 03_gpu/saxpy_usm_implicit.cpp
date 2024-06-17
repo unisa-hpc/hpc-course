@@ -3,7 +3,7 @@
 using namespace sycl;
 
 int main(int, char**) {
-    const size_t size = 10000;
+    const size_t size = 100000;
 
     queue q;
     std::cout << "Device: " << q.get_device().get_info<info::device::name>() << "\n";

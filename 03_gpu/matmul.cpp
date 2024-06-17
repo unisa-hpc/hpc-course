@@ -3,7 +3,7 @@
 using namespace sycl;
 
 int main(int, char**) {
-  const size_t size = 256;
+  const size_t size = 1024;
   std::vector<float> A_mat(size * size, 1.0f);
   std::vector<float> B_mat(size * size, 2.0f);
   std::vector<float> C_mat(size * size, 0.0f);

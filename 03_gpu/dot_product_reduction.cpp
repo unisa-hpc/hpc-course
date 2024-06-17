@@ -3,7 +3,7 @@
 using namespace sycl;
 
 int main(int, char**) {
-  constexpr size_t size = 10000;
+  constexpr size_t size = 1000000;
   std::vector<float> x_vec(size, 0.5f);
   std::vector<float> y_vec(size, 2.0f);
   float dot_value = 0.0f;
