@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>High Performance Computing, Master Course at the University of Salerno</title>
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<div id="header">
+  <a href="https://www.unisa.it">
+    <img src="logo_unisa_black.png" style="height:80px;float:left;margin-left:50px;">
+  </a>
+  <a href="https://di.unisa.it">
+    <img src="dip_informatica_unisa.png" style="height:90px;float:right;margin-right:50px;">
+  </a>
+  
+  <h1>High Performance Computing</h1>
+  <div class='text-center'><code>UNISA 0522500136</code> Summer Semester 2025 <i>(A.A. 2024-25)</i></div>
+
+  <div style="clear:both;"></div>
+</div>
+
+<div id="teaser">	
+<figure class="figure">
+  <img src="leonardo-cineca.png" class="figure-img img-fluid rounded" alt="Leonardo supercomputer at CINECA, image courtesy of CINECA">
+  <figcaption class="figure-caption">Leonardo supercomputer, image courtesy of CINECA.</figcaption>
+</figure>
+</div>
+
+
+<div class="sechighlight">
+<div class="container sec">
+  <h2>Course Overview</h2>
+  <div id="coursedesc">
+	This course provides a broad introduction to … Programming models for parallel systems: vectorial instruction, multi-threading, heterogeneous computing, GPU programming Parallel programming patterns Rewrite program to exploit parallelism Optimization: code and compiler optimization, profiling and tools Applications
+	
+Discussion Forum and Projects.
+	It is possible to use the discussion forum on the e-learning course website to post about general issues.
+	A list of projects will be available on the e-learning course website.
+	It is also possible to propose a new project to be discussed with the professor.
+  </div>
+</div>
+</div>
+
+<div class="container sec">
+<div class="row">
+  <div class="col-md-2">
+    <h2>Instructor</h2>
+    <div class="instructor">
+      <a href="http://www.cosenza.eu">
+      <div class="instructorphoto"><img src="biagio.jpg"></div>
+      <div>Biagio Cosenza</div>
+      </a>
+    </div>    
+  </div>
+  
+  <div class="col-md-10">
+    <h2>Teaching Assistants</h2>
+    <div class="instructor">
+      <a href="">
+      <div class="instructorphoto"><img src="lorenzo.jpg"></div><div>Lorenzo Carpentieri</div></a>
+    </div>
+    <div class="instructor">
+      <a href="">
+      <div class="instructorphoto"><img src="saleh.jpg"></div><div>Saleh Jamali Golzar</div></a>
+    </div>
+    <div class="instructor">
+      <a href="">
+      <div class="instructorphoto"><img src="antonio.jpg"></div><div>Antonio De Caro</div></a>
+    </div>	
+    <div class="instructor">
+      <a href="">
+	  <div class="instructorphoto"><img src="luigi.jpg"></div><div>Luigi Crisci</div></a>
+    </div>			
+  </div>
+</div>
+</div>
+
+
+<div class="sechighlight">
+<div class="container sec">
+<div class="row">
+	<div class="col-md-4">
+      <h2>Class Time and Location</h2>
+      Summer semester (February-June, 2025).<br>
+      Lecture: Monday 15:30-17:30, Tuesday 9:00-11:00<br>
+      Room P6, Building F3, Campus Fisciano<br>     
+	  <img src="aula_P6_edificio_F3_unisa.png" style="width: 80%;">
+    </div>
+	
+    <div class="col-md-4">
+      <h2>Office Hours</h2>
+      <b>Biagio Cosenza</b>: 14:00-15:30 Mondays (office)</br>
+	  <b>TA</b>: 11:00-12:00 Tuesdays (Isislab/P6)</br>
+	  <b>TA</b>: 11:00-12:00 Fridays (Isislab)</br>
+	We recommend to send an email to fix an appointemnt.
+	
+	<h2>Grading</h2>
+	The final grade follows <a href="https://en.wikipedia.org/wiki/Academic_grading_in_Italy">Italian academic grading</a> measured in thirtieths (0-30 scale), the minimum grade is 18/30 and the maximum grade is 30/30.
+	The final grade is made up of 50% of the written examination mark and 50% of the project mark.
+    </div>
+	
+  <div class="col-md-4">	
+    <h2>HPC Hardware Access</h2>
+	Students can run their code on ISISLab's machines and the UNISA HPC cluster.  
+	For the projects, depending on the topic, students will have access to the following cluster infrastructures:
+	<ul>
+	  <li>Intel Tiber IA Cloud</li>
+	  <li>Leonardo supercomputer at CINECA</li>
+	  <li>Galileo supercomputer at CINECA</li>
+	</ul>
+	We thanks Intel and CINECA for their sponsor and support!	  	  	        
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container sec">
+<table id="schedule-table" class="table table-hover">
+    <thead>
+	<tr>
+          <th>Lecture</th>
+          <th>Date</th>
+          <th>Title</th>
+          <th class="download-col">Download</th>
+          <th>Code</th>
+          <th>Reading</th>
+	</tr>
+    </thead>
+
+	<tr class="table-info">
+      <td>1</td><td>24/02/2025</td>
+      <td>Course info</td>
+	  <td><a href="lecture_00.pdf">[slides]</a></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+    <tr >
+      <td></td><td>24/02/2025</td>
+      <td>Introduction to HPC</td>
+      <td><a href="">[slides]</a></td>
+      <td><a href="">[code]</a></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>25/02/2025</td><td>A View from the Top: Optimizing Matrix Multiplication</td>
+      <td><a href="">[slides]</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+	<tr class="table-warning">
+      <td></td>
+      <td>25/02/2025</td><td>Exercise set 1: matmul</td>
+      <td><a href="">[assignment]</a></td>
+      <td></td>
+	  <td></td>      
+    </tr>
+
+
+	
+	<tr >
+      <td>3</td><td>03/03/2025</td>
+      <td>Multicore: Architecture, OpenMP fundamentals</td>
+      <td><a href="">[pdf]</a></td>
+      <td></td>
+      <td><a href="">[code]</a></td>
+    </tr>
+	
+	<tr >
+      <td>4</td>
+      <td>04/03/2025</td>
+      <td>Multicore: Loop parallelism</td>
+      <td><a href="">[slides]</a></td>
+      <td></td>
+      <td><br>
+          </td>
+      <td></td>
+    </tr>	
+	<tr>
+      <td>5</td><td>10/03/2025</td>
+      <td>Multicore: Task</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>     
+   <tr>
+      <td>6</td><td>11/03/2025</td>
+      <td>Multicore: NUMA</td>
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>   
+	<tr class="table-warning">
+      <td></td><td>11/03/2025</td>
+      <td>Multicore Exercise Set</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+
+    <tr>
+      <td>7</td><td>17/03/2025</td>
+      <td>Vectorization: Architectural Considerations and SIMD fundamentals in AVX2</td>
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>
+    <tr>
+      <td>8</td><td>18/04/2025</td>
+      <td>Vectorization</td>
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>
+    <tr>
+      <td>9</td><td>24/04/2025</td>
+      <td>Vectorization</td>
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>
+    <tr>
+      <td>10</td><td>25/03/2025</td>
+      <td>Autovectorization and programming models for SIMD. An overview of the VLA approach in RVV and SVE2.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>		
+    <tr class="table-warning">
+      <td></td><td>25/03/2025</td>
+      <td>Vectorization Exercise Set</td>
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>
+
+  
+    <tr>
+      <td>11</td><td>31/03/2025</td>
+      <td>Introduction to GPU Architecture.<br>Introduction to SYCL.</td>
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>
+	<tr class="table-info">
+	  <td></td><td>31/03/2025</td>
+      <td>Debugging SYCL with MemSanitizer.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>	
+
+    <tr>
+      <td>12</td><td>01/04/2025</td>
+	  <td>GPU Threading Model. SYCL: ND-range, work and subgrop, group algorithms.  </td>      
+      <td></td>      
+      <td></td>
+	  <td></td>
+    </tr>
+	
+	<tr class="table-info">
+	  <td></td><td>01/04/2025</td>
+      <td>Profiling with Intel VTune and NVIDIA Nsight.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>		
+    <tr >
+      <td>13</td><td>07/04/2025</td>
+      <td>GPU Memory Model. SYCL: Local memory in SYCL. Matrix multiplication in SYCL.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	<tr>
+      <td>14</td><td>08/04/2025</td>
+      <td>GPU Optimization: Reduction and prefix sum. SYCL Optimizations showcase.</td>  
+      <td></td>
+	  <td></td>
+      <td></td>
+    </tr>	
+	<tr class="table-warning">
+      <td></td><td>08/04/2025</td>
+      <td>Exercise Set: GPU Programming in SYCL</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>	
+    <tr>
+	  <td>15</td><td>14/04/2025</td>
+      <td>A tour of GPU programming models beyond SYCL:<br>OpenCL, vendor-based (CUDA, HIP, LevelZero), OpenMP acceleration. 
+	  <br>High-level frameworks: Celerity, Kokkos, RAJA, Legion</td>            
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	<tr class="table-warning">
+      <td></td><td>14/04/2025</td>
+      <td>Exercise Set: CUDA to SYCL Porting</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>	
+		    
+    <tr class="table-success">
+        <td>16</td>
+        <td>15/04/2025</td>
+        <td>Project presentation and assignment</td>
+    <td></td>
+      <td></td>
+        <td></td>
+     </tr>
+
+  
+    <tr class="table-danger">
+        <td></td>
+        <td>21/04/2025</td>
+        <td>Easter holiday break! No lecture!</td>
+		<td></td>
+		<td></td>
+        <td></td>
+     </tr>
+  
+   
+    <tr>
+		<td>17</td><td>15/04/2025</td>
+        <td>Roofline Model</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+	<tr class="table-info">
+	  <td></td><td>01/04/2025</td>
+      <td>Roofline with Intel Advisor</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+	    
+    <tr>
+		<td>18</td><td>28/04/2025</td>
+        <td>Benchmarking</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+		<td>19</td><td>29/04/2025</td>
+        <td>Compilers and HPC</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+		<td>20</td><td>05/05/2025</td>
+        <td>Scheduling</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+   
+    <tr>
+		<td>21</td><td>06/05/2025</td>
+        <td>What in a loop? Loop optimization</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+		<tr class="table-info">
+      <td></td><td>06/05/2025</td>
+      <td>Exercise Set: Loop optimization</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>	
+
+    <tr>
+		<td>22</td><td>12/05/2025</td>
+        <td>Energy Efficient Computing</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+    <tr>
+		<td>23</td><td>13/05/2025</td>
+        <td>HPC for AI. Approximate Computing.</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+
+	
+	<tr>
+		<td>24</td><td>19/05/2025</td>
+        <td>Project work with TA</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+    <tr>
+		<td>25</td><td>20/05/2025</td>
+        <td>Project work with TA</td>
+		<td></td>
+		<td></td>
+        <td></td>
+    </tr>
+
+
+    <tr class="table-success"> 
+      <td>26</td>
+      <td>26/05/2025</td>
+      <td>Project Review</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    
+</table>    
+</div> 
+
+
+
+<div class="sechighlight">
+<div class="container sec">
+  <h2>FAQ</h2>
+  <div class="qqa">
+    <div class="qq">Is the course given in English?</div>
+    <div class="qa">Yes. You can, however, fell free to write emails or ask questions in Italian, if you feel more condident. You can as well use any language spoken by the instructors (Italian, English, German, Spanish, Persian).</div>
+  </div>
+  <div class="qqa">
+    <div class="qq">Can I take this course if I am not in the cloud curriculum?</div>
+    <div class="qa">Yes. The course can be choosen as an optional one from master students enrolled in other curricula.</div>
+  </div>
+  <div class="qqa">
+    <div class="qq">Can I audit or sit in?</div>
+    <div class="qa">In general we are very open to sitting-in guests. Out of courtesy, we would appreciate that you first email us or talk to the instructor to be added to the class list. </div>
+  </div>
+  <div class="qqa">
+    <div class="qq">Is there a textbook for this course?</div>
+    <div class="qa">The instructor provides course notes, publications and code that cover the material thoroughly. However, we do recommend some textbooks for this course:
+        <ul>
+            <li>openmp.</li>
+            <li>patterns</li>
+            <li>sycl</li>
+        </ul>
+    </div>
+  </div>
+  <div class="qqa">
+    <div class="qq">Can I work in groups for the Project?</div>
+    <div class="qa">Yes, in groups of up to three people.</div>
+  </div>
+  <div class="qqa">
+    <div class="qq">What is the best way to reach the course staff?</div>
+    <div class="qa">For general questions please use the forum on the elearning platform, so that other students may benefit from your questions and our answers. If you have a personal matter, email us at the class instructors.</div>
+  </div>
+  <div class="qqa">
+    <div class="qq">Can I combine the Project with another course?</div>
+    <div class="qa">Yes, you may. There are a couple of courses concurrently offered with HPC in the cloud curriculum, such as XXX and XXX. Speak to the instructors if you want to combine your final project with another course.</div>
+  </div>
+</div>
+</div>
+
+<div class="sechighlight">
+
+<div class="container sec">
+  <h2>HPC Project Hall of Fame</h2>
+	This is a list of the best student projects from previous year course.
+	<table id="schedule-table" class="table table-hover">
+    <thead>
+	<tr>
+          <th>Semester</th>
+          <th>Project Title</th>
+          <th>Students</th>
+          <th>Report</th>
+          <th>Code</th>
+	</tr>
+    </thead>
+
+	<tr>
+      <td>2024</td>
+      <td></td>
+      <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+
+	<tr>
+      <td>2023</td>
+      <td></td>
+      <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+
+	<tr>
+      <td>2022</td>
+      <td></td>
+      <td></td>
+	  <td></td>
+	  <td></td>
+    </tr>
+
+</table> 
+
+</div>
+
+
+<div id="footer">
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
