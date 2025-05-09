@@ -7,13 +7,6 @@
 using DATA_TYPE = double;
 constexpr size_t TMAX = 500;
 
-// Initialize the arrays exactly as in the SYCL version:
-//
-//  • fict[t] = t
-//  • ex[i][j] = ((i)*(j+1) + 1) / NX    for 0 ≤ i < NX, 0 ≤ j < NY
-//  • ey[i][j] = ((i−1)*(j+2) + 2) / NX  for 0 ≤ i < NX, 0 ≤ j < NY
-//  • hz[i][j] = ((i−9)*(j+4) + 3) / NX  for 0 ≤ i < NX, 0 ≤ j < NY
-//
 // We allocate ex as NX×(NY+1) and ey as (NX+1)×NY to match the original strides.
 void init_arrays(DATA_TYPE* fict,
                  DATA_TYPE* ex,
