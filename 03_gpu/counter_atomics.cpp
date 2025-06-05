@@ -26,7 +26,7 @@ int main(int, char**) {
     });
   host_accessor dot_res(dot_buf, read_only);
 
-  // Print the dot product
+  // Print the dot product 
   std::cout << "\ndot product value: " << dot_res[0];
   std::cout << "\ndotproduct successfully completed\n";
   return 0;
